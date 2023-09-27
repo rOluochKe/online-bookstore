@@ -10,3 +10,6 @@ Migration
 
 Stop running container
   - docker-compose down
+
+Tests
+  - docker-compose exec web python manage.py test
