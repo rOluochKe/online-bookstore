@@ -1,6 +1,9 @@
 Build in detach mode
   - docker-compose up -d --build
 
+Reload
+  - docker-compose up -d
+
 Check for logs
   - docker-compose logs
 
