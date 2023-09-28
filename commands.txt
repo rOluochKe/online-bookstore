@@ -17,3 +17,6 @@ Stop running container
 
 Tests
   - docker-compose exec web python manage.py test
+
+Combine staticfiles
+  - docker-compose exec web python manage.py collectstatic
