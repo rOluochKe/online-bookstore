@@ -20,3 +20,13 @@ Tests
 
 Combine staticfiles
   - docker-compose exec web python manage.py collectstatic
+
+
+Check if deployment ready
+  - docker-compose exec web python manage.py check --deploy
+
+Run deployment
+  - docker-compose -f docker-compose-prod.yml up -d
+
+Generate new secret key
+  - docker-compose exec web python -c "import secrets; print(secrets.token_urlsafe(38))"
